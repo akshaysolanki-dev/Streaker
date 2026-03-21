@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.app{
+  display: flex;
+  height: 100vh;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  /* padding: 20px; */
+  background-color: #13161d;
+  border-right: 1px rgba(252, 252, 252, 0.315) solid;
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+}
+
+
+/* still confused */
+.sidebar > * {
+  padding: 20px;
+}  
+
+
+.app-name{
+  font-family: Bungee, sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+  display: flex;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.877);
+  padding-bottom: 20px;
+  border-bottom: 1px rgba(255, 255, 255, 0.315) solid;
+}
+.fire{
+  background-color: #6c63ff;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.l-word{
+  color: #6c63ff;
+}
+
+.sidebar-section{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-section a {
+  font-size: 13px;
+  color: rgb(188, 176, 176);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease, color 0.2s ease, ;
+}
+
+
+
+.sidebar-section a:hover{
+  background-color: rgba(255, 255, 255, 0.052) ;
+  color: white;
+
+}
+
+.sidebar-section a.active {
+  background-color: #20223f;
+  border: #180ded68 solid 1px;
+  color: white;
+  box-shadow: 0 0 10px rgba(108, 99, 255, 0.2);
+}
+
+.sidebar-section p {
+  color: rgba(253, 253, 253, 0.708);
+  font-size: 10px;
+}
+
+.sidebar-footer{
+  padding: 10px 16px; 
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.507);
+  margin-top: auto;
+
+}
+
+.profile-pic img{
+  background-color: rgb(84, 98, 63);
+  height: 35px;
+  width: 35px;
+  border-radius: 20px;
+
+}
