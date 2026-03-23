@@ -16,11 +16,11 @@ html{
   position: fixed;
   top: 0;
   left: 0;
+  left: 0;
+  width: 240px;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 270px;
-  /* padding: 20px; */
   background-color: #13161d;
   border-right: 1px rgba(252, 252, 252, 0.315) solid;
   font-family: sans-serif;
@@ -108,4 +108,126 @@ html{
   width: 35px;
   border-radius: 20px;
 
+}
+/* main{
+
+  height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+  padding: 20px 40px */
+/* 
+} */
+main{
+  position: fixed;
+  top: 0;
+  left: 240px;
+  background-color: #0d0f14;
+  right: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 20px 40px;
+}
+ 
+main header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+main header h1{
+  color: white;
+  font-family: Bungee, sans-serif;
+  font-weight: lighter;
+  font-size:30px;
+}
+main header h1:before{
+  content: "Monday, 23-march-2026";
+  font-size: 12px;
+  position: absolute;
+  bottom: -15px;
+  left: 0px;
+  
+  color:rgba(255, 255, 255, 0.507) ;
+  font-weight: 100;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
+}
+
+
+main header button{
+  background-color: #6c63ff;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 11px;
+  min-width: max-content;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.week-date{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.daywise{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #13161d;
+  height: 60px;
+  width: 50px;
+  color: white;
+  border: solid rgba(255, 255, 255, 0.228) 1px;
+  border-radius: 10px;
+}
+
+.stats-raw{
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 30px;
+}
+.stats-raw div{
+  height: 120px;
+  background-color: #13161d;
+  color: white;
+  border: solid rgba(255, 255, 255, 0.228) 1px;
+  border-radius: 20px;
+  border-top: #6c63ff solid 2px;
+}
+.content-grid{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  gap: 10px;
+}
+.content-grid div { 
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+  
+}
+.fade-in, .fade-out, .daily-note{
+  height: 120px;
+   background-color: #13161d;
+   border: solid rgba(255, 255, 255, 0.228) 1px;
+   border-radius: 20px;
+}
+.fade-out{
+  height: 250px;
+}
+.flex-card{
+  display: flex;
+  flex-direction: column;
+}
+
+.today-score, .activity-hotmap{
+  background-color: #13161d;
+   border: solid rgba(255, 255, 255, 0.228) 1px;
+   border-radius: 20px;
+   height: 255px;
 }
